@@ -1,0 +1,36 @@
+plugins {
+    id "com.android.application"
+}
+
+android {
+    namespace "com.example.telegramawgproxy"
+    compileSdk 35
+
+    defaultConfig {
+        applicationId "com.example.telegramawgproxy"
+        minSdk 23
+        targetSdk 35
+        versionCode 1
+        versionName "1.0"
+    }
+
+    buildToolsVersion "35.0.0"
+
+    packagingOptions {
+        jniLibs {
+            useLegacyPackaging true
+        }
+    }
+
+    testOptions {
+        unitTests.returnDefaultValues = true
+    }
+}
+
+dependencies {
+    testImplementation "junit:junit:4.13.2"
+}
+
+tasks.withType(JavaCompile).configureEach {
+    options.compilerArgs += ["-Xlint:deprecation"]
+}

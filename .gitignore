@@ -1,0 +1,13 @@
+.gradle/
+build/
+app/build/
+local.properties
+*.iml
+
+
+build-src/wireproxy-awg-1.0.16/wireproxy
+build-src/wireproxy-awg-1.0.16/config-adapter
+
+extracted/
+
+dist/
