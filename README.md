@@ -9,6 +9,10 @@ Android-утилита запускает wireproxy-awg на телефоне и
 слот VPN остаётся свободным, системные маршруты не меняются, остальные
 приложения работают напрямую.
 
+<p align="center">
+  <img src="screenshots/app_main.jpg" width="320" alt="AWG Messenger Proxy — главный экран">
+</p>
+
 ## Как это устроено
 
 Telegram подключается к SOCKS5 на 127.0.0.1:1080. Внутри процесса wireproxy
